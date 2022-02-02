@@ -1,0 +1,7 @@
+#Mon Mar 30 16:53:50 CDT 2020
+base.0=/Users/mahmoudkhamis/Files/Jeremy/JeremyAndroid/app/build/intermediates/transforms/dexMerger/debug/10
+path.1=classes2.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=/Users/mahmoudkhamis/Files/Jeremy/JeremyAndroid/app/build/intermediates/transforms/dexMerger/debug/10

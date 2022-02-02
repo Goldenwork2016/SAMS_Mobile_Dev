@@ -1,0 +1,66 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/mahmoudkhamis/Files/Jeremy/JeremyAndroid/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
+            "map": [
+                {
+                    "source": "/Users/mahmoudkhamis/Files/Jeremy/JeremyAndroid/app/src/main/res/values-v23/styles.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "16",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "211"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "250"
+                    }
+                },
+                {
+                    "source": "/Users/mahmoudkhamis/.gradle/caches/transforms-2/files-2.1/0145b7b618ab08cba8fc46b605fb27f0/res/values-v23/values-v23.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "200"
+                    },
+                    "to": {
+                        "startLines": "41",
+                        "startColumns": "4",
+                        "startOffsets": "2846",
+                        "endLines": "43",
+                        "endColumns": "12",
+                        "endOffsets": "2991"
+                    }
+                },
+                {
+                    "source": "/Users/mahmoudkhamis/.gradle/caches/transforms-2/files-2.1/f4debc1bb412f1bfb524af11d48a47a9/res/values-v23/values-v23.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,19,32,33,34,35,36",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,190,325,400,487,1277,2079,2206,2311,2426,2533",
+                        "endLines": "2,3,4,5,18,31,32,33,34,35,36",
+                        "endColumns": "134,134,74,86,12,12,126,104,114,106,112",
+                        "endOffsets": "185,320,395,482,1272,2074,2201,2306,2421,2528,2641"
+                    },
+                    "to": {
+                        "startLines": "6,7,8,9,10,23,36,37,38,39,40",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "255,390,525,600,687,1477,2279,2406,2511,2626,2733",
+                        "endLines": "6,7,8,9,22,35,36,37,38,39,40",
+                        "endColumns": "134,134,74,86,12,12,126,104,114,106,112",
+                        "endOffsets": "385,520,595,682,1472,2274,2401,2506,2621,2728,2841"
+                    }
+                }
+            ]
+        }
+    ]
+}

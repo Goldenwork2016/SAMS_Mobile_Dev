@@ -1,0 +1,64 @@
+0:81 com.onesignal:OneSignal
+82:1602 JSR 305
+1685:1732 Protobuf Nano
+3418:680 STL
+4099:11365 absl
+15465:11342 flatbuffers
+26808:11358 safeparcel
+38167:21000 ICU4C
+59168:731 UTF
+59900:10141 customtabsclient
+70042:11358 aead
+81401:11358 JSR 250
+92760:11358 Volley
+104119:22655 Checker Framework
+126775:11357 Error Prone
+138133:46817 rhino
+184951:10695 AndroidX print library.
+195647:1846 Checker Framework Annotations
+197494:11342 FlatBuffers
+208837:47 com.google.firebase:firebase-messaging
+208885:10695 AndroidX document file library.
+219581:10695 AndroidX versioned parcelable library.
+230277:57295 Firebase Common
+287573:1481 darts_clone
+289055:1558 RE2
+290614:2500 zlib
+293115:3182 PCRE
+296298:47 com.google.android.gms:play-services-ads-identifier
+296346:47 com.google.firebase:firebase-iid
+296394:47 com.google.android.gms:play-services-base
+296442:11361 Android Multi-Dex Library
+307804:3 play-services-tasks
+307808:3 play-services-basement
+307812:11361 AutoValue Annotations
+319174:11361 Android Support Library v4
+330536:11361 Android Support Library media compat
+341898:11361 Android Support Library fragment
+353260:11361 Android Support Library core utils
+364622:11361 Android Support Library core UI
+375984:11361 Android Support Library compat
+387346:11361 Android Support Library Annotations
+398708:11361 Android Lifecycle Runtime
+410070:11361 Android Lifecycle-Common
+421432:11361 Android Arch-Common
+432794:47 com.google.android.gms:play-services-tasks
+432842:47 com.google.android.gms:play-services-stats
+432890:47 com.google.firebase:firebase-measurement-connector
+432938:47 com.google.android.gms:play-services-basement
+432986:46 org.codehaus.groovy:groovy-all
+433033:40 org.bouncycastle:bcpkix-jdk15on
+433074:40 org.bouncycastle:bcprov-jdk15on
+433115:46 javax.inject:javax.inject
+433162:46 com.squareup:javawriter
+433209:47 it.unimi.dsi:fastutil
+433257:50 net.sf.jopt-simple:jopt-simple
+433308:46 com.googlecode.json-simple:json-simple
+433355:121 net.sf.kxml:kxml2
+433477:46 com.google.code.findbugs:jsr305
+433524:34 org.checkerframework:checker-qual
+433559:46 com.google.errorprone:error_prone_annotations
+433606:46 com.google.j2objc:j2objc-annotations
+433653:46 org.jetbrains:annotations
+433700:55 org.jvnet.staxex:stax-ex
+433756:102 javax.xml.bind:jaxb-api

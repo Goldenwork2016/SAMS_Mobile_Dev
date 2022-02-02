@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/image_d"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:scaleType="centerCrop"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/avatar1" />
+
+        <EditText
+            android:id="@+id/edit_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="3dp"
+            android:ems="10"
+            android:enabled="false"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:inputType="textMultiLine"
+            android:hint="Message Here"
+            app:layout_constraintBottom_toBottomOf="@+id/image_d"
+            app:layout_constraintEnd_toStartOf="@+id/image_d"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/edit_btn_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/button_style_box"
+            android:backgroundTint="@color/green"
+            android:text="Edit"
+            app:layout_goneMarginBottom="16dp"
+            android:minHeight="38dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/edit_msg"
+            app:layout_constraintTop_toBottomOf="@+id/edit_msg"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/delet_msg_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+
+            android:background="@drawable/button_style_box"
+            android:backgroundTint="@color/red"
+            android:minHeight="38dp"
+            android:text="Delete"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/edit_btn_dialog"
+            app:layout_constraintStart_toEndOf="@+id/edit_btn_dialog"
+            app:layout_constraintTop_toTopOf="@+id/edit_btn_dialog" />
+
+        <Button
+            android:id="@+id/cancel_edit_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/button_style_box"
+            android:backgroundTint="@color/white"
+            android:minHeight="38dp"
+            android:text="@string/cancel"
+            android:gravity="center"
+            android:textColor="@color/design_default_color_primary"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/delet_msg_btn"
+            app:layout_constraintStart_toEndOf="@+id/delet_msg_btn"
+            app:layout_constraintTop_toTopOf="@+id/delet_msg_btn" />
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>

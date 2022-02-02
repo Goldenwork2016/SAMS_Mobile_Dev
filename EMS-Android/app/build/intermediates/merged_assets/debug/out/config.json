@@ -1,0 +1,48 @@
+[
+  {
+    "title":"Dashboard",
+    "drawable":"",
+    "submenu":"",
+    "iap":false,
+    "tabs":[
+      {
+        "title":"Recent",
+        "provider":"wordpress",
+        "arguments":[
+          "en.blog.wordpress.com"
+        ]
+      }
+    ]
+  },
+  {
+    "title":"Awards",
+    "drawable":"",
+    "submenu":"",
+    "iap":false,
+    "tabs":[
+      {
+        "title":"Radio 3FM",
+        "provider":"radio",
+        "arguments":[
+          "http://yp.shoutcast.com/sbin/tunein-station.m3u?id=1627230"
+        ]
+      }
+    ]
+  },
+  {
+    "title":"Support",
+    "drawable":"",
+    "submenu":"",
+    "iap":false,
+    "tabs":[
+      {
+        "title":"Live TV ABC",
+        "provider":"stream",
+        "arguments":[
+          "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8"
+        ]
+      }
+    ]
+
+  }
+]

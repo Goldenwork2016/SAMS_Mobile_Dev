@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    >
+<android.support.constraint.ConstraintLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateUserActivity">
+
+    <EditText
+        android:id="@+id/edit_summer_amount"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="number"
+        android:paddingLeft="8dp"
+        android:hint="Summer"
+        app:layout_constraintBottom_toBottomOf="@+id/label_summer_amount"
+        app:layout_constraintEnd_toEndOf="@+id/level_spinner"
+        app:layout_constraintStart_toStartOf="@+id/level_spinner"
+        app:layout_constraintTop_toTopOf="@+id/label_summer_amount" />
+
+    <EditText
+        android:id="@+id/edit_winter_amount"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="number"
+        android:paddingLeft="8dp"
+        android:hint="Winter"
+        app:layout_constraintBottom_toBottomOf="@+id/label_winter_amount"
+        app:layout_constraintEnd_toEndOf="@+id/level_spinner"
+        app:layout_constraintStart_toStartOf="@+id/level_spinner"
+        app:layout_constraintTop_toTopOf="@+id/label_winter_amount" />
+
+    <TextView
+        android:id="@+id/label_summer_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Summer"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/label_spring_amount"
+        app:layout_constraintTop_toBottomOf="@+id/label_spring_amount" />
+
+    <TextView
+        android:id="@+id/label_winter_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Winter"
+        android:textSize="17sp"
+        android:layout_marginTop="24dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/label_summer_amount"
+        app:layout_constraintTop_toBottomOf="@+id/label_summer_amount" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/level_spinner"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/edit_winter_amount">
+
+        <Button
+            android:id="@+id/approve_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_style"
+            android:backgroundTint="#00a65a"
+            android:text="Approve"
+            android:minHeight="35dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:visibility="invisible"
+
+            />
+
+        <Button
+            android:id="@+id/deny_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_style"
+            android:backgroundTint="#dd4b39"
+            android:text="Deny"
+            android:minHeight="35dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/update_toolbar"
+        android:background="?attr/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="@android:color/white"
+        app:title="@string/awards"
+        ></android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:text="@string/school_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/update_toolbar"
+        android:layout_marginLeft="16dp" />
+
+    <Spinner
+        android:id="@+id/school_spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:text="@string/year"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <Spinner
+        android:id="@+id/year_spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="@+id/school_spinner"
+        app:layout_constraintStart_toStartOf="@+id/school_spinner"
+        app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:text="@string/std_id"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <EditText
+        android:id="@+id/edit_id"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="@string/student_id"
+        android:inputType="textPersonName"
+        android:paddingLeft="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView7"
+        app:layout_constraintEnd_toEndOf="@+id/year_spinner"
+        app:layout_constraintStart_toStartOf="@+id/year_spinner"
+        app:layout_constraintTop_toTopOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/fname"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <EditText
+        android:id="@+id/edit_fname"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="@string/fname"
+        android:inputType="textPersonName"
+        android:paddingLeft="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="@+id/edit_id"
+        app:layout_constraintStart_toStartOf="@+id/edit_id"
+        app:layout_constraintTop_toTopOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/lname"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+
+    <EditText
+        android:id="@+id/edit_lname"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingLeft="8dp"
+        android:hint="@string/lname"
+        app:layout_constraintBottom_toBottomOf="@+id/textView9"
+        app:layout_constraintEnd_toEndOf="@+id/edit_fname"
+        app:layout_constraintStart_toStartOf="@+id/edit_fname"
+        app:layout_constraintTop_toTopOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/sport"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+
+    <Spinner
+        android:id="@+id/sport_spinner"
+        android:layout_width="0dp"
+
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView10"
+        app:layout_constraintEnd_toEndOf="@+id/edit_lname"
+        app:layout_constraintStart_toStartOf="@+id/edit_lname"
+        app:layout_constraintTop_toTopOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/level"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <Spinner
+        android:id="@+id/level_spinner"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView11"
+        app:layout_constraintEnd_toEndOf="@+id/sport_spinner"
+        app:layout_constraintStart_toStartOf="@+id/sport_spinner"
+        app:layout_constraintTop_toTopOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/label_fall_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/fall_amount"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <EditText
+        android:id="@+id/edit_fall_ammount"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="number"
+        android:paddingLeft="8dp"
+        android:hint="@string/fall_amount"
+        app:layout_constraintBottom_toBottomOf="@+id/label_fall_amount"
+        app:layout_constraintEnd_toEndOf="@+id/level_spinner"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/level_spinner"
+        app:layout_constraintTop_toTopOf="@+id/label_fall_amount" />
+
+    <TextView
+        android:id="@+id/label_spring_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/spring_amount"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/label_fall_amount"
+        app:layout_constraintTop_toBottomOf="@+id/label_fall_amount" />
+
+    <EditText
+        android:id="@+id/edit_spring_amount"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="number"
+        android:paddingLeft="8dp"
+        android:hint="@string/spring_amount"
+        app:layout_constraintBottom_toBottomOf="@+id/label_spring_amount"
+        app:layout_constraintEnd_toEndOf="@+id/level_spinner"
+        app:layout_constraintStart_toStartOf="@+id/level_spinner"
+        app:layout_constraintTop_toTopOf="@+id/label_spring_amount" />
+
+    <Button
+        android:id="@+id/award_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_style_box"
+        android:minHeight="35dp"
+        android:onClick="buttonAward"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="0dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/label_spring_amount"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
+        tools:ignore="OnClick" />
+</android.support.constraint.ConstraintLayout></ScrollView>
